@@ -62,6 +62,11 @@ fn main() {
     println!("The value of string_slice is: {}", string_slice);
     println!("The value of string_object is: {}", string_object);
     //definied wrom speciul nofchic types
-
-    //qaysidir iolavasiga ozi yutmaganini olkis 
+    //the difference between &str and String is that the String is free and does whathever it wants and on the other hand you can borrow text with &str its mainly used on the arguments of functions like here
+    //on the hellotext function
+    println!("The value of string_object is: {}", hellotext("Mustafo"));
+}
+//you can choose specific value that returns using -> String | <-this returns string when the operation is done
+fn  hellotext(text: &str)-> String {
+    text.to_string()
 }
